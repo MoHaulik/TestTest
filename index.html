@@ -45,6 +45,33 @@
             color: gray;
         }
 
+        /* Right side of the header */
+        .header-right {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-right a {
+            margin-right: 20px;
+            font-size: 16px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .header-right button {
+            background-color: #6e44ff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .header-right button:hover {
+            background-color: #5534cc;
+        }
+
         /* Main content area */
         .main-content {
             background-color: white;
@@ -114,6 +141,36 @@
             text-align: center;
             color: #333;
             font-size: 18px;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .carousel-item:hover {
+            transform: translateY(-10px);
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        .carousel-item:active {
+            transform: translateY(-5px);
+        }
+
+        /* Button under the carousel */
+        .see-all-button {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .see-all-button button {
+            background-color: #6e44ff;
+            color: white;
+            font-size: 20px;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .see-all-button button:hover {
+            background-color: #5534cc;
         }
 
         /* Add responsiveness for smaller screens */
@@ -134,7 +191,7 @@
 </head>
 <body>
 
-    <!-- Header section with logo -->
+    <!-- Header section with logo and right-side links -->
     <div class="header">
         <div class="logo-container">
             <img src="https://via.placeholder.com/150x40?text=HEY+Logo" alt="HEY Logo"> <!-- Placeholder for logo -->
@@ -142,6 +199,11 @@
                 <h1>Uni/StartUp</h1>
                 <span>by 37signals</span>
             </div>
+        </div>
+
+        <div class="header-right">
+            <a href="#">Log ind</a>
+            <button>Opret bruger</button>
         </div>
     </div>
 
@@ -174,6 +236,11 @@
             <div class="carousel-item">
                 <p>Start-up 5: Green transportation</p>
             </div>
+        </div>
+
+        <!-- Button to see all start-ups -->
+        <div class="see-all-button">
+            <button>Se alle start-ups</button>
         </div>
     </div>
 
