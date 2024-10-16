@@ -67,6 +67,55 @@
             margin-top: 10px;
         }
 
+        .main-content .cta-button {
+            margin-top: 30px;
+        }
+
+        .cta-button button {
+            background-color: #6e44ff;
+            color: white;
+            font-size: 24px;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .cta-button button:hover {
+            background-color: #5534cc;
+        }
+
+        /* Carousel section */
+        .carousel-section {
+            margin: 40px auto;
+            padding: 20px;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        .carousel-container {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            scroll-behavior: smooth;
+        }
+
+        .carousel-item {
+            min-width: 300px;
+            height: 200px;
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            color: #333;
+            font-size: 18px;
+        }
+
         /* Add responsiveness for smaller screens */
         @media (max-width: 768px) {
             .main-content h2 {
@@ -75,6 +124,10 @@
 
             .main-content p {
                 font-size: 16px;
+            }
+
+            .carousel-item {
+                min-width: 250px;
             }
         }
     </style>
@@ -96,6 +149,32 @@
     <div class="main-content">
         <h2>Find Danmarks næste store Unicorn 🦄 lån til eller investor i danske Universitets start-ups.</h2>
         <p>"Uni/StartUp er en eksklusiv matchmaking portal udelukkende for investorer og kapitalsøgende start-ups fra de danske universiteter."</p>
+        
+        <!-- CTA Button -->
+        <div class="cta-button">
+            <button>Få adgang</button>
+        </div>
+    </div>
+
+    <!-- Carousel Section -->
+    <div class="carousel-section">
+        <div class="carousel-container">
+            <div class="carousel-item">
+                <p>Start-up 1: AI-driven health tech</p>
+            </div>
+            <div class="carousel-item">
+                <p>Start-up 2: Sustainable energy solutions</p>
+            </div>
+            <div class="carousel-item">
+                <p>Start-up 3: EdTech innovation</p>
+            </div>
+            <div class="carousel-item">
+                <p>Start-up 4: Fintech disruption</p>
+            </div>
+            <div class="carousel-item">
+                <p>Start-up 5: Green transportation</p>
+            </div>
+        </div>
     </div>
 
 </body>
