@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HEY by 37signals</title>
+    <title>Uni/StartUp</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -45,22 +45,37 @@
             color: gray;
         }
 
-        /* Main text area */
+        /* Main content area */
         .main-content {
+            background-color: white;
+            margin: 20px;
             padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
 
         .main-content h2 {
             font-size: 48px;
             font-weight: bold;
-            color: #6e44ff;
+            color: #6e44ff; /* Purple text */
         }
 
         .main-content p {
             font-size: 18px;
             color: #333;
             margin-top: 10px;
+        }
+
+        /* Add responsiveness for smaller screens */
+        @media (max-width: 768px) {
+            .main-content h2 {
+                font-size: 36px;
+            }
+
+            .main-content p {
+                font-size: 16px;
+            }
         }
     </style>
 </head>
@@ -71,16 +86,16 @@
         <div class="logo-container">
             <img src="https://via.placeholder.com/150x40?text=HEY+Logo" alt="HEY Logo"> <!-- Placeholder for logo -->
             <div>
-                <h1>UNI/StartUp</h1>
+                <h1>Uni/StartUp</h1>
                 <span>by 37signals</span>
             </div>
         </div>
     </div>
 
-    <!-- Main content section -->
+    <!-- Main content section with the large text -->
     <div class="main-content">
-        <h2>"Find Danmarks næste store Unicorn 🦄 lån til eller investor i danske Universitets start-ups."</h2>
-        <p>Uni/StartUp er en eksklusiv matchmaking portal udelukkende for investorer og kapitalsøgende start-ups fra de danske universiteter. </p>
+        <h2>Find Danmarks næste store Unicorn 🦄 lån til eller investor i danske Universitets start-ups.</h2>
+        <p>"Uni/StartUp er en eksklusiv matchmaking portal udelukkende for investorer og kapitalsøgende start-ups fra de danske universiteter."</p>
     </div>
 
 </body>
