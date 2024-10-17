@@ -268,6 +268,81 @@
             text-decoration: underline;
         }
 
+        /* Get access section */
+        .get-access-section {
+            background-color: white;
+            margin: 40px 20px;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .get-access-section h2 {
+            font-size: 36px;
+            color: #6e44ff;
+        }
+
+        .get-access-section .access-button {
+            margin-top: 20px;
+        }
+
+        .access-button button {
+            background-color: #6e44ff;
+            color: white;
+            font-size: 24px;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .access-button button:hover {
+            background-color: #5534cc;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .footer h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .newsletter-signup input[type="email"] {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+            margin-right: 10px;
+            width: 250px;
+        }
+
+        .newsletter-signup button {
+            background-color: #6e44ff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .newsletter-signup button:hover {
+            background-color: #5534cc;
+        }
+
+        .footer p {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #aaa;
+        }
+
         /* Add responsiveness for smaller screens */
         @media (max-width: 768px) {
             .main-content h2 {
@@ -284,6 +359,10 @@
 
             .blog-post {
                 flex: 1 1 100%;
+            }
+
+            .newsletter-signup input[type="email"] {
+                width: 200px;
             }
         }
     </style>
@@ -381,6 +460,29 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- Get access section -->
+    <div class="get-access-section">
+        <h2>Get access to Uni/StartUp</h2>
+        <div class="access-button">
+            <button>Create user today</button>
+        </div>
+    </div>
+
+    <!-- Platform info box -->
+    <div class="new-content-box">
+        <p>Uni/StartUp is an innovative platform where investors and university startups can connect and grow together. By joining, you gain access to exclusive opportunities to shape the future of innovation.</p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <h3>Sign up for our newsletter</h3>
+        <div class="newsletter-signup">
+            <input type="email" placeholder="Enter your email" />
+            <button>Subscribe</button>
+        </div>
+        <p>&copy; 2024 Uni/StartUp - All rights reserved.</p>
     </div>
 
 </body>
