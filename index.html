@@ -1,489 +1,530 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uni/StartUp</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uni/StartUp</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
 
-        /* Container for the logo and header */
-        .header {
-            background-color: white;
-            padding: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            border-radius: 20px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-            margin: 20px;
-        }
+    /* Container for the logo and header */
+    .header {
+      background-color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 20px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 20px;
+    }
 
-        .logo-container {
-            display: flex;
-            align-items: center;
-        }
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
 
-        .logo-container img {
-            height: 40px;
-            margin-right: 10px;
-        }
+    .logo-container img {
+      height: 40px;
+      margin-right: 10px;
+    }
 
-        .logo-container h1 {
-            font-size: 24px;
-            font-weight: bold;
-            margin: 0;
-        }
+    .logo-container h1 {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 0;
+    }
 
-        .logo-container span {
-            font-size: 14px;
-            color: gray;
-        }
+    .logo-container span {
+      font-size: 14px;
+      color: gray;
+    }
 
-        /* Right side of the header */
-        .header-right {
-            display: flex;
-            align-items: center;
-        }
+    /* Right side of the header */
+    .header-right {
+      display: flex;
+      align-items: center;
+    }
 
-        .header-right a {
-            margin-right: 20px;
-            font-size: 16px;
-            color: #333;
-            text-decoration: none;
-        }
+    .header-right a {
+      margin-right: 20px;
+      font-size: 16px;
+      color: #333;
+      text-decoration: none;
+    }
 
-        .header-right button {
-            background-color: #6e44ff;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            font-size: 16px;
-        }
+    .header-right button {
+      background-color: #6e44ff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 16px;
+    }
 
-        .header-right button:hover {
-            background-color: #5534cc;
-        }
+    .header-right button:hover {
+      background-color: #5534cc;
+    }
 
-        /* Main content area */
-        .main-content {
-            background-color: white;
-            margin: 20px;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
+    /* Main content area */
+    .main-content {
+      background-color: white;
+      margin: 20px;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
 
-        .main-content h2 {
-            font-size: 48px;
-            font-weight: bold;
-            color: #6e44ff; /* Purple text */
-        }
+    .main-content h2 {
+      font-size: 48px;
+      font-weight: bold;
+      color: #6e44ff; /* Purple text */
+    }
 
-        .main-content p {
-            font-size: 18px;
-            color: #333;
-            margin-top: 10px;
-        }
+    .main-content p {
+      font-size: 18px;
+      color: #333;
+      margin-top: 10px;
+    }
 
-        .main-content .cta-button {
-            margin-top: 30px;
-        }
+    .main-content .cta-button {
+      margin-top: 30px;
+    }
 
-        .cta-button button {
-            background-color: #6e44ff;
-            color: white;
-            font-size: 24px;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-        }
+    .cta-button button {
+      background-color: #6e44ff;
+      color: white;
+      font-size: 24px;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
 
-        .cta-button button:hover {
-            background-color: #5534cc;
-        }
+    .cta-button button:hover {
+      background-color: #5534cc;
+    }
 
-        /* Carousel section */
-        .carousel-section {
-            margin: 40px auto;
-            padding: 20px;
-            width: 90%;
-            max-width: 1200px;
-        }
+    /* Carousel section */
+    .carousel-section {
+      margin: 40px auto;
+      padding: 20px;
+      width: 90%;
+      max-width: 1200px;
+    }
 
-        .carousel-container {
-            display: flex;
-            overflow-x: auto;
-            gap: 20px;
-            scroll-behavior: smooth;
-        }
+    .carousel-container {
+      display: flex;
+      overflow-x: auto;
+      gap: 20px;
+      scroll-behavior: smooth;
+    }
 
-        .carousel-item {
-            min-width: 300px;
-            height: 200px;
-            background-color: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(10px);
-            border-radius: 15px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-            color: #333;
-            font-size: 18px;
-            transition: transform 0.3s, background-color 0.3s;
-        }
+    .carousel-item {
+      min-width: 300px;
+      height: 200px;
+      background-color: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      color: #333;
+      font-size: 18px;
+      transition: transform 0.3s, background-color 0.3s;
+    }
 
-        .carousel-item:hover {
-            transform: translateY(-10px);
-            background-color: rgba(255, 255, 255, 0.9);
-        }
+    .carousel-item:hover {
+      transform: translateY(-10px);
+      background-color: rgba(255, 255, 255, 0.9);
+    }
 
-        .carousel-item:active {
-            transform: translateY(-5px);
-        }
+    .carousel-item:active {
+      transform: translateY(-5px);
+    }
 
-        /* Button under the carousel */
-        .see-all-button {
-            text-align: center;
-            margin-top: 30px;
-        }
+    /* Button under the carousel */
+    .see-all-button {
+      text-align: center;
+      margin-top: 30px;
+    }
 
-        .see-all-button button {
-            background-color: #6e44ff;
-            color: white;
-            font-size: 20px;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-        }
+    .see-all-button button {
+      background-color: #6e44ff;
+      color: white;
+      font-size: 20px;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
 
-        .see-all-button button:hover {
-            background-color: #5534cc;
-        }
+    .see-all-button button:hover {
+      background-color: #5534cc;
+    }
 
-        /* New content box under carousel */
-        .new-content-box {
-            background-color: white;
-            margin: 20px;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
+    /* New content box under carousel */
+    .new-content-box {
+      background-color: white;
+      margin: 20px;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
 
-        .new-content-box p {
-            font-size: 18px;
-            color: #333;
-        }
+    .new-content-box p {
+      font-size: 18px;
+      color: #333;
+    }
 
-        .new-content-box .action-buttons {
-            margin-top: 20px;
-        }
+    .new-content-box .action-buttons {
+      margin-top: 20px;
+    }
 
-        .new-content-box .action-buttons button {
-            background-color: #6e44ff;
-            color: white;
-            font-size: 18px;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            margin: 0 10px;
-        }
+    .new-content-box .action-buttons button {
+      background-color: #6e44ff;
+      color: white;
+      font-size: 18px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin: 0 10px;
+    }
 
-        .new-content-box .action-buttons button:hover {
-            background-color: #5534cc;
-        }
+    .new-content-box .action-buttons button:hover {
+      background-color: #5534cc;
+    }
 
-        /* Blog section */
-        .blog-section {
-            margin: 40px auto;
-            padding: 20px;
-            width: 90%;
-            max-width: 1200px;
-        }
+    /* Interactive profile section */
+    .profile-container {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      margin-top: 50px;
+      position: relative;
+    }
 
-        .blog-grid {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
+    .profile {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      cursor: pointer;
+    }
 
-        .blog-post {
-            flex: 1 1 30%;
-            min-width: 300px;
-            background-color: #ffffff;
-            border-radius: 15px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            transition: transform 0.3s ease;
-        }
+    .profile img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
 
-        .blog-post:hover {
-            transform: translateY(-10px);
-        }
+    .profile-name {
+      position: absolute;
+      top: 180px;
+      width: 100%;
+      text-align: center;
+      font-size: 14px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
 
-        .blog-post img {
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
-        }
+    .profile:hover .profile-name {
+      opacity: 1;
+    }
 
-        .blog-post-content {
-            padding: 20px;
-        }
+    /* Speech bubble section */
+    .speech-bubble {
+      position: relative;
+      background-color: #fff;
+      color: #000;
+      border-radius: 20px;
+      padding: 20px;
+      max-width: 400px;
+      margin: 50px auto;
+      font-size: 18px;
+      font-style: italic;
+      text-align: center;
+      box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+    }
 
-        .blog-post-content h3 {
-            font-size: 20px;
-            color: #6e44ff;
-            margin-bottom: 10px;
-        }
+    .speech-bubble:after {
+      content: '';
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 0;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-top: 20px solid white;
+    }
 
-        .blog-post-content p {
-            font-size: 16px;
-            color: #333;
-            margin-bottom: 15px;
-        }
+    /* Blog section */
+    .blog-section {
+      margin: 40px auto;
+      padding: 20px;
+      width: 90%;
+      max-width: 1200px;
+    }
 
-        .blog-post-content a {
-            color: #6e44ff;
-            text-decoration: none;
-            font-weight: bold;
-        }
+    .blog-grid {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
 
-        .blog-post-content a:hover {
-            text-decoration: underline;
-        }
+    .blog-post {
+      flex: 1 1 30%;
+      min-width: 300px;
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
 
-        /* Get access section */
-        .get-access-section {
-            background-color: white;
-            margin: 40px 20px;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
+    .blog-post:hover {
+      transform: translateY(-10px);
+    }
 
-        .get-access-section h2 {
-            font-size: 36px;
-            color: #6e44ff;
-        }
+    .blog-post img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
 
-        .get-access-section .access-button {
-            margin-top: 20px;
-        }
+    .blog-post-content {
+      padding: 20px;
+    }
 
-        .access-button button {
-            background-color: #6e44ff;
-            color: white;
-            font-size: 24px;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-        }
+    .blog-post-content h3 {
+      font-size: 20px;
+      color: #6e44ff;
+      margin-bottom: 10px;
+    }
 
-        .access-button button:hover {
-            background-color: #5534cc;
-        }
+    .blog-post-content p {
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 15px;
+    }
 
-        /* Footer */
-        .footer {
-            background-color: #333;
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-        }
+    .blog-post-content a {
+      color: #6e44ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-        .footer h3 {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
+    .blog-post-content a:hover {
+      text-decoration: underline;
+    }
 
-        .newsletter-signup input[type="email"] {
-            padding: 10px;
-            border-radius: 5px;
-            border: none;
-            font-size: 16px;
-            margin-right: 10px;
-            width: 250px;
-        }
+    /* Footer section */
+    .footer {
+      background-color: #333;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
 
-        .newsletter-signup button {
-            background-color: #6e44ff;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-        }
+    .footer h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
 
-        .newsletter-signup button:hover {
-            background-color: #5534cc;
-        }
+    .newsletter-signup input[type="email"] {
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      font-size: 16px;
+      margin-right: 10px;
+      width: 250px;
+    }
 
-        .footer p {
-            margin-top: 20px;
-            font-size: 14px;
-            color: #aaa;
-        }
+    .newsletter-signup button {
+      background-color: #6e44ff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
 
-        /* Add responsiveness for smaller screens */
-        @media (max-width: 768px) {
-            .main-content h2 {
-                font-size: 36px;
-            }
+    .newsletter-signup button:hover {
+      background-color: #5534cc;
+    }
 
-            .main-content p {
-                font-size: 16px;
-            }
+    .footer p {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #aaa;
+    }
 
-            .carousel-item {
-                min-width: 250px;
-            }
+    /* Add responsiveness for smaller screens */
+    @media (max-width: 768px) {
+      .main-content h2 {
+        font-size: 36px;
+      }
 
-            .blog-post {
-                flex: 1 1 100%;
-            }
+      .main-content p {
+        font-size: 16px;
+      }
 
-            .newsletter-signup input[type="email"] {
-                width: 200px;
-            }
-        }
-    </style>
+      .carousel-item {
+        min-width: 250px;
+      }
+
+      .blog-post {
+        flex: 1 1 100%;
+      }
+
+      .newsletter-signup input[type="email"] {
+        width: 200px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <!-- Header section with logo and right-side links -->
-    <div class="header">
-        <div class="logo-container">
-            <img src="https://via.placeholder.com/150x40?text=HEY+Logo" alt="HEY Logo"> <!-- Placeholder for logo -->
-            <div>
-                <h1>Uni/StartUp</h1>
-                <span>by BarkBark</span>
-            </div>
-        </div>
-
-        <div class="header-right">
-            <a href="#">Log ind</a>
-            <button>Opret bruger</button>
-        </div>
+  <!-- Header section with logo and right-side links -->
+  <div class="header">
+    <div class="logo-container">
+      <img src="https://via.placeholder.com/150x40?text=HEY+Logo" alt="HEY Logo"> <!-- Placeholder for logo -->
+      <div>
+        <h1>Uni/StartUp</h1>
+        <span>by 37signals</span>
+      </div>
     </div>
 
-    <!-- Main content section with the large text -->
-    <div class="main-content">
-        <h2>Find Danmarks næste store Unicorn 🦄 lån til eller investor i danske Universitets start-ups.</h2>
-        <p>"Uni/StartUp er en eksklusiv matchmaking portal udelukkende for investorer og kapitalsøgende start-ups fra de danske universiteter."</p>
-        
-        <!-- CTA Button -->
-        <div class="cta-button">
-            <button>Få adgang</button>
-        </div>
+    <div class="header-right">
+      <a href="#">Log ind</a>
+      <button>Opret bruger</button>
+    </div>
+  </div>
+
+  <!-- Main content section with the large text -->
+  <div class="main-content">
+    <h2>Find Danmarks næste store Unicorn 🦄 lån til eller investor i danske Universitets start-ups.</h2>
+    <p>"Uni/StartUp er en eksklusiv matchmaking portal udelukkende for investorer og kapitalsøgende start-ups fra de danske universiteter."</p>
+    
+    <!-- CTA Button -->
+    <div class="cta-button">
+      <button>Få adgang</button>
+    </div>
+  </div>
+
+  <!-- Carousel Section -->
+  <div class="carousel-section">
+    <div class="carousel-container">
+      <div class="carousel-item">
+        <p>Start-up 1: AI-driven health tech</p>
+      </div>
+      <div class="carousel-item">
+        <p>Start-up 2: Sustainable energy solutions</p>
+      </div>
+      <div class="carousel-item">
+        <p>Start-up 3: EdTech innovation</p>
+      </div>
+      <div class="carousel-item">
+        <p>Start-up 4: Fintech disruption</p>
+      </div>
+      <div class="carousel-item">
+        <p>Start-up 5: Green transportation</p>
+      </div>
     </div>
 
-    <!-- Carousel Section -->
-    <div class="carousel-section">
-        <div class="carousel-container">
-            <div class="carousel-item">
-                <p>Start-up 1: AI-driven health tech</p>
-            </div>
-            <div class="carousel-item">
-                <p>Start-up 2: Sustainable energy solutions</p>
-            </div>
-            <div class="carousel-item">
-                <p>Start-up 3: EdTech innovation</p>
-            </div>
-            <div class="carousel-item">
-                <p>Start-up 4: Fintech disruption</p>
-            </div>
-            <div class="carousel-item">
-                <p>Start-up 5: Green transportation</p>
-            </div>
-        </div>
+    <!-- Button to see all start-ups -->
+    <div class="see-all-button">
+      <button>Se alle start-ups</button>
+    </div>
+  </div>
 
-        <!-- Button to see all start-ups -->
-        <div class="see-all-button">
-            <button>Se alle start-ups</button>
-        </div>
+  <!-- Interactive speech bubble and profile section -->
+  <div class="speech-bubble" id="speechBubble">
+    "Hover over a profile to see their quote."
+  </div>
+
+  <div class="profile-container">
+    <div class="profile" onmouseover="changeQuote('Ammaar Reshi', 'Head of Design', 'Design is not just what it looks like and feels like. Design is how it works.')">
+      <img src="https://via.placeholder.com/150" alt="Ammaar Reshi">
+      <div class="profile-name">Ammaar Reshi - Head of Design</div>
     </div>
 
-    <!-- New content box with two buttons -->
-    <div class="new-content-box">
-        <p>"Vil du være med til at skabe næste store danske succes? Bliv invester i dag eller tilføj din start-up til vores platform."</p>
-        <div class="action-buttons">
-            <button>Bliv invester</button>
-            <button>Tilføj Start-up</button>
-        </div>
+    <div class="profile" onmouseover="changeQuote('John Doe', 'Lead Developer', 'Code is like humor. When you have to explain it, it’s bad.')">
+      <img src="https://via.placeholder.com/150" alt="John Doe">
+      <div class="profile-name">John Doe - Lead Developer</div>
     </div>
 
-    <!-- Blog section -->
-    <div class="blog-section">
-        <h2>Nyeste blogposts</h2>
-        <div class="blog-grid">
-            <div class="blog-post">
-                <img src="https://via.placeholder.com/300x150?text=Blog+Image+1" alt="Blog Image 1">
-                <div class="blog-post-content">
-                    <h3>Hvordan AI revolutionerer start-up landskabet</h3>
-                    <p>Læs mere om hvordan kunstig intelligens påvirker start-ups i Danmark...</p>
-                    <a href="#">Læs mere</a>
-                </div>
-            </div>
-            <div class="blog-post">
-                <img src="https://via.placeholder.com/300x150?text=Blog+Image+2" alt="Blog Image 2">
-                <div class="blog-post-content">
-                    <h3>5 tips til succesfuld investor-pitching</h3>
-                    <p>Her er de bedste råd til at fange investorers opmærksomhed...</p>
-                    <a href="#">Læs mere</a>
-                </div>
-            </div>
-            <div class="blog-post">
-                <img src="https://via.placeholder.com/300x150?text=Blog+Image+3" alt="Blog Image 3">
-                <div class="blog-post-content">
-                    <h3>Hvorfor bæredygtige løsninger er fremtiden</h3>
-                    <p>Bæredygtighed er ikke længere en mulighed men en nødvendighed...</p>
-                    <a href="#">Læs mere</a>
-                </div>
-            </div>
-        </div>
+    <div class="profile" onmouseover="changeQuote('Jane Smith', 'Marketing Director', 'Marketing is no longer about the stuff that you make, but about the stories you tell.')">
+      <img src="https://via.placeholder.com/150" alt="Jane Smith">
+      <div class="profile-name">Jane Smith - Marketing Director</div>
     </div>
+  </div>
 
-    <!-- Get access section -->
-    <div class="get-access-section">
-        <h2>Get access to Uni/StartUp</h2>
-        <div class="access-button">
-            <button>Create user today</button>
+  <!-- Blog section -->
+  <div class="blog-section">
+    <h2>Nyeste blogposts</h2>
+    <div class="blog-grid">
+      <div class="blog-post">
+        <img src="https://via.placeholder.com/300x150?text=Blog+Image+1" alt="Blog Image 1">
+        <div class="blog-post-content">
+          <h3>Hvordan AI revolutionerer start-up landskabet</h3>
+          <p>Læs mere om hvordan kunstig intelligens påvirker start-ups i Danmark...</p>
+          <a href="#">Læs mere</a>
         </div>
-    </div>
-
-    <!-- Platform info box -->
-    <div class="new-content-box">
-        <p>Uni/StartUp is an innovative platform where investors and university startups can connect and grow together. By joining, you gain access to exclusive opportunities to shape the future of innovation.</p>
-    </div>
-
-    <!-- Footer -->
-    <div class="footer">
-        <h3>Sign up for our newsletter</h3>
-        <div class="newsletter-signup">
-            <input type="email" placeholder="Enter your email" />
-            <button>Subscribe</button>
+      </div>
+      <div class="blog-post">
+        <img src="https://via.placeholder.com/300x150?text=Blog+Image+2" alt="Blog Image 2">
+        <div class="blog-post-content">
+          <h3>5 tips til succesfuld investor-pitching</h3>
+          <p>Her er de bedste råd til at fange investorers opmærksomhed...</p>
+          <a href="#">Læs mere</a>
         </div>
-        <p>&copy; 2024 Uni/StartUp - All rights reserved.</p>
+      </div>
+      <div class="blog-post">
+        <img src="https://via.placeholder.com/300x150?text=Blog+Image+3" alt="Blog Image 3">
+        <div class="blog-post-content">
+          <h3>Hvorfor bæredygtige løsninger er fremtiden</h3>
+          <p>Bæredygtighed er ikke længere en mulighed men en nødvendighed...</p>
+          <a href="#">Læs mere</a>
+        </div>
+      </div>
     </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <h3>Sign up for our newsletter</h3>
+    <div class="newsletter-signup">
+      <input type="email" placeholder="Enter your email" />
+      <button>Subscribe</button>
+    </div>
+    <p>&copy; 2024 Uni/StartUp - All rights reserved.</p>
+  </div>
+
+  <script>
+    function changeQuote(name, title, quote) {
+      const bubble = document.getElementById('speechBubble');
+      bubble.textContent = `"${quote}" - ${name}, ${title}`;
+    }
+  </script>
 
 </body>
 </html>
