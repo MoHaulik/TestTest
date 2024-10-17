@@ -173,6 +173,101 @@
             background-color: #5534cc;
         }
 
+        /* New content box under carousel */
+        .new-content-box {
+            background-color: white;
+            margin: 20px;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .new-content-box p {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .new-content-box .action-buttons {
+            margin-top: 20px;
+        }
+
+        .new-content-box .action-buttons button {
+            background-color: #6e44ff;
+            color: white;
+            font-size: 18px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: 0 10px;
+        }
+
+        .new-content-box .action-buttons button:hover {
+            background-color: #5534cc;
+        }
+
+        /* Blog section */
+        .blog-section {
+            margin: 40px auto;
+            padding: 20px;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        .blog-grid {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .blog-post {
+            flex: 1 1 30%;
+            min-width: 300px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .blog-post:hover {
+            transform: translateY(-10px);
+        }
+
+        .blog-post img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .blog-post-content {
+            padding: 20px;
+        }
+
+        .blog-post-content h3 {
+            font-size: 20px;
+            color: #6e44ff;
+            margin-bottom: 10px;
+        }
+
+        .blog-post-content p {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .blog-post-content a {
+            color: #6e44ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .blog-post-content a:hover {
+            text-decoration: underline;
+        }
+
         /* Add responsiveness for smaller screens */
         @media (max-width: 768px) {
             .main-content h2 {
@@ -185,6 +280,10 @@
 
             .carousel-item {
                 min-width: 250px;
+            }
+
+            .blog-post {
+                flex: 1 1 100%;
             }
         }
     </style>
@@ -241,6 +340,46 @@
         <!-- Button to see all start-ups -->
         <div class="see-all-button">
             <button>Se alle start-ups</button>
+        </div>
+    </div>
+
+    <!-- New content box with two buttons -->
+    <div class="new-content-box">
+        <p>"Vil du være med til at skabe næste store danske succes? Bliv invester i dag eller tilføj din start-up til vores platform."</p>
+        <div class="action-buttons">
+            <button>Bliv invester</button>
+            <button>Tilføj Start-up</button>
+        </div>
+    </div>
+
+    <!-- Blog section -->
+    <div class="blog-section">
+        <h2>Nyeste blogposts</h2>
+        <div class="blog-grid">
+            <div class="blog-post">
+                <img src="https://via.placeholder.com/300x150?text=Blog+Image+1" alt="Blog Image 1">
+                <div class="blog-post-content">
+                    <h3>Hvordan AI revolutionerer start-up landskabet</h3>
+                    <p>Læs mere om hvordan kunstig intelligens påvirker start-ups i Danmark...</p>
+                    <a href="#">Læs mere</a>
+                </div>
+            </div>
+            <div class="blog-post">
+                <img src="https://via.placeholder.com/300x150?text=Blog+Image+2" alt="Blog Image 2">
+                <div class="blog-post-content">
+                    <h3>5 tips til succesfuld investor-pitching</h3>
+                    <p>Her er de bedste råd til at fange investorers opmærksomhed...</p>
+                    <a href="#">Læs mere</a>
+                </div>
+            </div>
+            <div class="blog-post">
+                <img src="https://via.placeholder.com/300x150?text=Blog+Image+3" alt="Blog Image 3">
+                <div class="blog-post-content">
+                    <h3>Hvorfor bæredygtige løsninger er fremtiden</h3>
+                    <p>Bæredygtighed er ikke længere en mulighed men en nødvendighed...</p>
+                    <a href="#">Læs mere</a>
+                </div>
+            </div>
         </div>
     </div>
 
